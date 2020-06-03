@@ -1,0 +1,25 @@
+*{margin: 0; box-sizing: border-box;}
+
+.Nav{ float: left; width: 100%; background-color: black; }
+    .Nav li{ list-style: none; float: left; width: 33.3%; text-align: center;}
+    .Nav a{ display: block; width: 100%; padding: 10px 0; color: #ffffff; font-weight: bold; text-decoration: none; font-size: 20px;}
+    .Nav a:hover{ background: #666666; }
+
+.Center{ text-align: center;}
+
+.Content{ float: left; width: 100%; padding: 15px; }
+
+.Formulario{ float: left;width: 70%; height: 300px; margin: 20px 15%;}
+    .FormularioInput{ float: left; width: 50%; padding: 0 5%;}
+    .FormularioInput100{width: 100% !important;}
+    .FormularioInput input[type = 'text']{ width: 100%; height: 30px;}
+    .FormularioInput input[type = 'submit']{ display: inline-block; margin: 15px 0 ; padding: 15px 35px; background: #000000; color: #fff; font-weight: bold; text-align: center; border: 0; cursor: pointer; border-radius: 10px;}
+
+.Resultado{display: none; float:left; width: 70%; border: 2px solid #00ff0d; background: #d8ffd5; text-align:center; padding: 15px; margin: 20px 15% 10px 15%;}
+
+.TabelaCrud{width: 100%; text-align: center;}
+    .TabelaCrud tr:nth-child(2n-1){background: #cccccc;}
+    .TabelaCrud tr:first-child{background: #000000; color: #fff; font-weight: bold; font-size: 20px;}
+    .TabelaCrud td{width: 25%;}
+
+.Icone{width: 5%;}    
