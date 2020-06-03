@@ -12,7 +12,7 @@ Esse projeto faz parte de uma atividade avaliativa da disciplina de Desenvolvime
 **Autores**
 Foto | Nome | GitHub | Likedin | E-mail
 ---- | ---- | ------ | ------- | ------
-<img src="Doc/ThiagoBrazileiro.jpeg" width="100px"> | Thiago Brazileiro Martinez | [Thiagobrazileiro](https://github.com/thiagobrazileiro) | [Linkedin](https://www.linkedin.com/in/thiagobrazileiromartinez/) | brazileiro.thiago@gmail.com
+<img src="Doc/ThiagoBrazileiro.jpg" width="100px"> | Thiago Brazileiro Martinez | [Thiagobrazileiro](https://github.com/thiagobrazileiro) | [Linkedin](https://www.linkedin.com/in/thiagobrazileiromartinez/) | brazileiro.thiago@gmail.com
 
 **Tecnologias**
 
