@@ -16,7 +16,7 @@ Esse projeto faz parte de uma atividade avaliativa da disciplina de Desenvolvime
 - Colocar todos os arquivos deste projeto dentro da pasta MSQLI citada anteriormente
 - Criar um banco de dados MSQLI com o nome 'crud'
 - Criar uma tabela no bando de dados com o nome 'cadastro', esta tabela deve ter 4 colunas, Id, Nome, Instituicao e Curso
-- Id da tabela é auto incremetado
+- Id da tabela é auto incrementado
 - Pronto, agora é so acessar atraves do localhost !
 
 **Autores**
