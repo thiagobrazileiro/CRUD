@@ -23,13 +23,32 @@ include("Class/ClassCrud.php");
     }
 
 ?>
-
-
-<div class="Resultado"></div>
-   
+   		<!-- Modal -->
+		<div class="modal fade resultado" id="modalSucesso" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Sucesso!</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			  <div class="modal-body">
+				Cadastro Realizado com Sucesso!
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" onClick="window.location.reload()" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+			
+			  </div>
+			</div>
+		  </div>
+		</div>
+		
     <div class="Formulario">
         <h1 class="Center">Cadastro</h1>
+		
 
+		
         <form name="FormCadastro" id="FormCadastro" method="post" action="Controllers/ControllerCadastro.php">
             <input type="hidden" id="Acao" name="Acao" value="<?php echo $Acao; ?>">
             <input type="hidden" id="Id" name="Id" value="<?php echo $Id; ?>">
@@ -50,7 +69,9 @@ include("Class/ClassCrud.php");
             </div>
 
             <div class="FormularioInput FormularioInput100 Center">
-                <input type="submit" value="<?php echo $Acao; ?>">
+
+				<input type="submit" value="<?php echo $Acao; ?>" class="btn btn-primary" data-toggle="modal" data-target="#modalSucesso">
+				
             </div>
         </form>
 
