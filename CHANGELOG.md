@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Melhorar o visual e aumentar as informações para cada usuário.
 
+## [1.0.1] - 2020-06-04
+### Added
+- Adiciona instruções de uso no README.
+
 ## [1.0.0] - 2020-06-03
 ### Added
 - CRUD basico de estudantes.
