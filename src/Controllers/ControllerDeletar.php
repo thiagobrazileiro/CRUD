@@ -1,4 +1,4 @@
-<div class="Resultado"></div>
+
 
 <?php 
 include("../Class/ClassCrud.php"); 

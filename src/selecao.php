@@ -4,6 +4,7 @@ include("Class/ClassCrud.php");
 ?>
 
     <div class="Content">
+        <div class="ResultadoD"></div>
         
         <table class="TabelaCrud">
             <tr>

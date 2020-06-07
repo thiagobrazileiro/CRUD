@@ -28,32 +28,7 @@ include("Class/ClassCrud.php");
     }
 ?>
 
-<!-- Modal -->
-<div class="modal fade resultado" id="modalSucesso" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel">Sucesso!</h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-					<span aria-hidden="true">&times;</span>
-				</button>
-			</div>
-			<div class="modal-body">
-				<?php 
-					if($Acao == "Cadastrar"){
-						echo("Cadastrado com sucesso!"); 
-					}else{
-						echo("Editado com sucesso!");
-					}
-				?>
-			</div>
-			<div class="modal-footer">
-				<button type="button" onClick="window.location.reload()" class="btn btn-primary" data-dismiss="modal">Fechar</button>
-			</div>
-		</div>
-	</div>
-</div>
-		
+<div class="Resultado"></div>
 <!-- Formulario começa aqui -->    
     <div class="Formulario">
         <h1 class="Center">Cadastro</h1>
@@ -77,7 +52,7 @@ include("Class/ClassCrud.php");
             </div>
 
             <div class="FormularioInput FormularioInput100 Center">
-				<input type="submit" value="<?php echo $Acao; ?>" class="btn btn-primary" data-toggle="modal" data-target="#modalSucesso">
+				<input type="submit" value="<?php echo $Acao; ?>">
             </div>
         </form>
     </div>

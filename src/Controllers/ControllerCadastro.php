@@ -18,6 +18,7 @@ if($Acao=='Cadastrar'){
             $Curso
         )
     );
+    echo("Cadastrado com sucesso");
     
 }else{
     $Crud->updateDB(
@@ -32,6 +33,7 @@ if($Acao=='Cadastrar'){
             $Id
         )
     );
+    echo("Editado com sucesso");
     
 }
 

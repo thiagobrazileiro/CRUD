@@ -8,6 +8,8 @@ $("#FormCadastro").on('submit',function(event){
         type: 'post',
         dataType: 'html',
         data: Dados,
+        // Este success faz com que retorne o que tem na outra pagina como resultado, como nao tem nada mais, eu comentei
+        // mas seria o "cadastrado com sucesso" que ficava dentro da div .Resultado
         success: function(Dados){
             $('.Resultado').show().html(Dados);
         }
@@ -20,11 +22,22 @@ $('.Deletar').on('click',function(event){
 
     var Link=$(this).attr('href');
 
-    if(confirm("Deseja mesmo apagar esse dado?")){
-        window.location.href=Link;
+    if(confirm(`Deseja mesmo deletar este Dado ?(esta operação é irreversível)`)){
+        var Dados = $(this).serialize();
+        $.ajax({
+            url: Link,
+            type: 'get',
+            dataType: 'html',
+            data: Dados,
+            success: function(Dados){
+                //window.location.reload();
+                $('.ResultadoD').show().html(Dados);
+            }
+        })
     }else{
         return false;
     }
 
 }); 
 
+//"Deseja mesmo apagar esse dado?"
