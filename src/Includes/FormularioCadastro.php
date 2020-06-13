@@ -4,7 +4,7 @@ Se vier um ID como referência, ele já sabe que é para editar
 e com isso ele ja deixa os campos pré-preenchidos. Também da
 valor a variavel "Acao", para poder executar os scripts corretamente.
 */
-include("Class/ClassCrud.php");
+include("../Model/ClassCrud.php");
 
     if(isset($_GET['id'])){
         $Acao = "Editar";
@@ -32,7 +32,7 @@ include("Class/ClassCrud.php");
 <!-- Formulario começa aqui -->    
     <div class="Formulario">
         <h1 class="Center">Cadastro</h1>
-        <form name="FormCadastro" id="FormCadastro" method="post" action="Controllers/ControllerCadastro.php">
+        <form name="FormCadastro" id="FormCadastro" method="post" action="../Controllers/ControllerCadastro.php">
             <input type="hidden" id="Acao" name="Acao" value="<?php echo $Acao; ?>">
             <input type="hidden" id="Id" name="Id" value="<?php echo $Id; ?>">
 

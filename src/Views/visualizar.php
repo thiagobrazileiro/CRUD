@@ -1,6 +1,6 @@
 <?php 
-include("Includes/Header.php"); 
-include("Class/ClassCrud.php");
+include("../Includes/Header.php"); 
+include("../Model/ClassCrud.php");
 ?>
 
     <div class="Content">
@@ -27,7 +27,8 @@ include("Class/ClassCrud.php");
             <strong>Instituição:</strong> <?php echo $Fetch[2]; ?><br>
             <strong>Curso:</strong> <?php echo $Fetch[3]; ?><br>
         <?php } ?>
-
+        
+        <button title="Voltar a tela de selação" class="btn btn-dark" onclick="window.location.href = 'selecao.php'">Voltar!</button>
     </div>
 
-<?php include("Includes/Footer.php"); ?>
+<?php include("../Includes/Footer.php"); ?>

@@ -23,4 +23,6 @@
     .TabelaCrud tr:first-child{background: #000000; color: #fff; font-weight: bold; font-size: 20px;}
     .TabelaCrud td{width: 25%;}
 
-.Icone{width: 5%;}    
+.Icone{width: 5%;}   
+
+.btn{margin: 15px 0;}

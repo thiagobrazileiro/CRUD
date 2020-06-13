@@ -1,6 +1,6 @@
 <?php 
-include("Includes/Header.php");
-include("Class/ClassCrud.php"); 
+include("../Includes/Header.php");
+include("../Model/ClassCrud.php"); 
 ?>
 
     <div class="Content">
@@ -32,9 +32,9 @@ include("Class/ClassCrud.php");
                             <td><?php echo $Fetch[2];?></td>
                             <td><?php echo $Fetch[3];?></td>
                             <td>
-                                <a href="<?php echo "visualizar.php?id={$Fetch[0]}"; ?>"><img class = "Icone" src="Imgs/Visualizar.png" alt="Visualizar"></a>
-                                <a href="<?php echo "cadastro.php?id={$Fetch[0]}"; ?>"><img class = "Icone" src="Imgs/Editar.png" alt="Atualizar"></a>
-                                <a class = "Deletar" href="<?php echo "Controllers/ControllerDeletar.php?id={$Fetch[0]}"; ?>"><img class = "Icone" src="Imgs/Deletar.png" alt="Deletar"></a>
+                                <a title="Visualizar mais informações" href="<?php echo "visualizar.php?id={$Fetch[0]}"; ?>"><img class = "Icone" src="../Imgs/Visualizar.png" alt="Visualizar"></a>
+                                <a title="Editar o dado" href="<?php echo "cadastro.php?id={$Fetch[0]}"; ?>"><img class = "Icone" src="../Imgs/Editar.png" alt="Atualizar"></a>
+                                <a class = "Deletar" title="Deletar o dado" href="<?php echo "../Controllers/ControllerDeletar.php?id={$Fetch[0]}"; ?>"><img class = "Icone" src="../Imgs/Deletar.png" alt="Deletar"></a>
                             </td>
                         </tr>
             <?php            
@@ -47,4 +47,4 @@ include("Class/ClassCrud.php");
 
     </div>
 
-<?php include("Includes/Footer.php"); ?>
+<?php include("../Includes/Footer.php"); ?>

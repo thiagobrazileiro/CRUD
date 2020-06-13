@@ -1,7 +1,7 @@
 <?php
 
 include("../Includes/Variaveis.php");
-include("../Class/ClassCrud.php"); 
+include("../Model/ClassCrud.php"); 
 
 
 $Crud = new ClassCrud();

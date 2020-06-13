@@ -4,7 +4,7 @@ $("#FormCadastro").on('submit',function(event){
     var Dados = $(this).serialize();
 
     $.ajax({
-        url: 'Controllers/ControllerCadastro.php',
+        url: '../Controllers/ControllerCadastro.php',
         type: 'post',
         dataType: 'html',
         data: Dados,
@@ -29,8 +29,8 @@ $('.Deletar').on('click',function(event){
             type: 'get',
             dataType: 'html',
             data: Dados,
-            success: function(Dados){
-                //window.location.reload();
+            success:  function(Dados){
+                window.location.reload();
                 $('.ResultadoD').show().html(Dados);
             }
         })

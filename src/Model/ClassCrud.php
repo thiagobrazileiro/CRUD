@@ -1,6 +1,6 @@
 <?php
 
-include ("{$_SERVER['DOCUMENT_ROOT']}/MYSQLI/src/Class/Conexao.php");
+include ("{$_SERVER['DOCUMENT_ROOT']}/MYSQLI/src/Model/Conexao.php");
 
 class ClassCrud extends Conexao{
 

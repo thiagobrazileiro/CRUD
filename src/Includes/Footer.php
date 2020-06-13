@@ -1,4 +1,4 @@
-<script src="./Includes/zepto.min.js"></script>
+<script src="../Includes/zepto.min.js"></script>
 <script type="text/javascript" src="https://raw.github.com/madrobby/zepto/master/src/data.js"></script>
 <script type="text/javascript" src="https://raw.github.com/madrobby/zepto/master/src/selector.js"></script>
 
